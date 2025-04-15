@@ -1,0 +1,4 @@
+example.com,100
+google.com,14
+github.com,14
+expired.badssl.com,14
