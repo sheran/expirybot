@@ -52,6 +52,8 @@ By default, the application will:
 Usage of ./expirybot:
   -file string
         Path to domains file (overrides default config file)
+  -add string
+        Add a domain to check (format: domain.com[,threshold])
 ```
 
 Examples:
@@ -60,8 +62,11 @@ Examples:
 # Use a custom domains file
 ./expirybot -file /path/to/domains.txt
 
-# Combine options
-./expirybot -file /path/to/domains.txt
+# Add a domain to check with a threshold of 14 days (default)
+./expirybot -add sheran.sg
+
+# Add a domain to check with a custom threshold 
+./expirybot -add sheran.sg,7
 ```
 
 ### Configuration File Format
