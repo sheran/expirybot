@@ -300,7 +300,7 @@ func checkDomain(domain string, thresholdDays int) {
 	// Check SSL certificate
 	conn, err := tls.DialWithDialer(dialer, "tcp", domain+":443", tlsConfig)
 	if err != nil {
-		fmt.Printf("[✗] %s - SSL connection failed or cert expired [%s]\n", domain, err)
+		fmt.Printf("[✗] %s - SSL connection failed or cert expired\n", domain)
 		return
 	}
 	defer conn.Close()
